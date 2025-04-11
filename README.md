@@ -1,4 +1,4 @@
-# Real Time Cambodia AQI Dashboard Using Public API
+# Real Time Cambodia AQI Dashboard Using Data MEF's Public API
 ## Objective
 1. Shows current Air Quality Index in Cambodia
 2. Fetch data from public API
