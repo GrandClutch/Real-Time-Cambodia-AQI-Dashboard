@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Inter", sans-serif;
+    background-color: #235564;
+    color: #F5F5DC;
+  }
+  .header{
+      text-align: center;
+      margin: 1rem;
+  }
+  .aqi-head{
+      text-align: center;
+      padding: .5rem;
+  }
+  .aqi-data{
+      display: grid;
+      gap: 1rem;
+  }
+  .card, .card-top{
+      background-color: #234c58;
+      padding: .5rem;
+      border-radius: 3px;
+      color: #F5F5DC;
+      margin: .5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  .card-top{
+      margin: 0 auto;
+      width: 50%;
+      height: 320px;
+      overflow-y: auto;
+      transition: all 0.3s ease;
+      & p{
+          padding: 10px;
+      }
+      & p:hover {
+          background-color: #1d5a6d;
+          border-radius: 2px;
+          width: 98%;
+          color: #FAE5D8;
+          cursor: pointer;
+      }
+  }
+  .card-top::-webkit-scrollbar {
+      width: 15px;
+    }
+    
+    .card-top::-webkit-scrollbar-track {
+      background: #dfb6b2; 
+      border-radius: 5px;
+    }
+    
+    .card-top::-webkit-scrollbar-thumb {
+      background-color: #234c58; 
+      border-radius: 10px;
+      border: 2px solid #dfb6b2; 
+    }
+    
+    .card-top::-webkit-scrollbar-thumb:hover {
+      background-color: #32697a;
+      cursor: pointer;
+    }
+    
+  .aqi-bottom{
+      & .cardVal{
+          margin: 0 auto;
+          width: 80%;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(2, auto);
+          column-gap: 10px;
+      }
+      & h2{
+          color: #F5F5DC;
+      }
+      & p{
+          font-size: 1.2rem;
+          font-weight: bold;
+          color:#F5F5DC;
+      }
+  }
+  #aqi-specific-prov span{
+      color: #F5F5DC;
+      text-transform: uppercase;
+  }
+  
+  

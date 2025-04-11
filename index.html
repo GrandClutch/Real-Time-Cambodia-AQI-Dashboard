@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Index Dashboard</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Air Quality Index Dashboard In Cambodia</h1>
+    </div>
+    <div class="aqi-data">
+        <div class="aqi-top">
+            <div class="card-top">
+                <div class="aqi-head">
+                    <h2>Live AQI For Each Provinces</h2>
+                </div>
+                <hr>
+                <div class="provinces" id="prov-options">
+                    <p>Phnom Penh</p>
+                    <p>Takeo</p>
+                    <p>Koh Kong</p>
+                    <p>Kratie</p>
+                    <p>Kep</p>
+                    <p>Kandal</p>
+                    <p>Prey Veng</p>
+                    <p>Kampong Cham</p>
+                    <p>Oddar Meanchey</p>
+                    <p>Sihanoukville</p>
+                    <p>Siem Reap</p>
+                    <p>Battambang</p>
+                    <p>Kampot</p>
+                    <p>Kampong Thom</p>
+                    <p>Svay Rieng</p>
+                    <p>Mondulkiri</p>
+                    <p>Banteay Meanchey</p>
+                    <p>Kampong Chhnang</p>
+                    <p>Strung Treng</p>
+                    <p>Preah Vihear</p>
+                    <p>Tboung Khmum</p>
+                    <p>Pailin</p>
+                    <p>Ratanakiri</p>
+                    <p>Kampong Speu</p>
+                    <p>Pursat</p>
+                </div>
+            </div>
+        </div>
+        <div class="aqi-bottom">
+            <div class="aqi-head">
+                <h2 id="aqi-specific-prov">Air Quality Index</h2>
+            </div>
+            <div class="cardVal">
+                <div class="card">
+                  <div class="card-head">
+                    <p class="card-title-color">CO</p>
+                  </div>
+                  <div class="card-item">
+                    <h2 id="coVal">___</h2>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-head">
+                    <p class="card-title-color">NO2</p>
+                  </div>
+                  <div class="card-item">
+                    <h2 id="no2Val">___</h2>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-head">
+                    <p class="card-title-color">O3</p>
+                  </div>
+                  <div class="card-item">
+                    <h2 id="o3Val">___</h2>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-head">
+                    <p class="card-title-color">PM2.5</p>
+                  </div>
+                  <div class="card-item">
+                    <h2 id="pm2_5Val">___</h2>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-head">
+                    <p class="card-title-color">PM10</p>
+                  </div>
+                  <div class="card-item">
+                    <h2 id="pm10Val">___</h2>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-head">
+                    <p class="card-title-color">SO2</p>
+                  </div>
+                  <div class="card-item">
+                    <h2 id="so2Val">___</h2>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
